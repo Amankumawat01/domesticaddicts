@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DomesticAddicts</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#0d0d0d;
+    background-image: linear-gradient(#1a1a1a 1px, transparent 1px),
+                      linear-gradient(90deg, #1a1a1a 1px, transparent 1px);
+    background-size:40px 40px;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+    padding:20px;
+    text-align:center;
+}
+
+/* Profile Section */
+
+.profile-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+}
+
+.profile-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    border:6px solid #ffd700;
+    box-shadow:0 0 25px #22ff00;
+    object-fit:cover;
+}
+
+/* Glow Animation */
+.profile-img{
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{box-shadow:0 0 15px #22ff00;}
+to{box-shadow:0 0 40px #22ff00;}
+}
+
+.name{
+    font-size:30px;
+    font-weight:700;
+    margin-top:15px;
+    color:#ffd700;
+}
+
+.members{
+    margin:10px 0;
+    color:#ffd700;
+    font-weight:600;
+}
+
+/* Tags */
+
+.tags{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.tag{
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.green{
+    background:#123d16;
+    color:#00ff66;
+    border:1px solid #00ff66;
+}
+
+.red{
+    background:#3d1212;
+    color:#ff4d4d;
+    border:1px solid #ff4d4d;
+}
+
+/* Stats */
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+}
+
+.card{
+    width:32%;
+    padding:18px 10px;
+    border-radius:15px;
+    background:rgba(0,0,0,0.7);
+    border:1px solid #1aff00;
+    box-shadow:0 0 15px rgba(0,255,0,0.4);
+}
+
+.card h2{
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.card p{
+    font-size:13px;
+    color:#aaa;
+}
+
+/* Button */
+
+.btn{
+    display:block;
+    margin:25px 0;
+    padding:18px;
+    border-radius:35px;
+    text-decoration:none;
+    font-weight:700;
+    font-size:16px;
+    background:linear-gradient(90deg,#2ecc71,#ff0000);
+    color:white;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Features */
+
+.features{
+    display:flex;
+    justify-content:space-around;
+    margin-top:25px;
+    padding:15px;
+    border-radius:15px;
+    border:1px solid #1aff00;
+    background:rgba(0,0,0,0.7);
+}
+
+.feature{
+    text-align:center;
+    font-size:13px;
+    color:#ccc;
+}
+
+.footer{
+    margin-top:30px;
+    font-size:12px;
+    color:#777;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="profile-wrapper">
+        <!-- 🔥 REPLACE image.jpg with your uploaded image -->
+        <img src="profile.jpg" class="profile-img">
+    </div>
+
+    <div class="name">🏏 domesticaddicts</div>
+    <div class="members">👥 67K+ Active Members</div>
+
+    <div class="tags">
+        <div class="tag green">🏆 Elite Analyst</div>
+        <div class="tag red">⚡ Live Updates</div>
+    </div>
+
+    <div class="stats">
+        <div class="card">
+            <h2>25,892</h2>
+            <p>Match Tips</p>
+        </div>
+        <div class="card">
+            <h2 style="color:#ff4d4d;">94%</h2>
+            <p>Win Rate</p>
+        </div>
+        <div class="card">
+            <h2 style="color:#ffd700;">4.9 ★</h2>
+            <p>Rating</p>
+        </div>
+    </div>
+
+    <!-- ✅ YOUR TELEGRAM LINK ADDED -->
+    <a href="https://t.me/+F3U5pfoz0d0wYTQ1" class="btn" target="_blank">
+        ✈ Join Telegram Channel
+    </a>
+
+    <div class="features">
+        <div class="feature">✔ Verified</div>
+        <div class="feature">🔒 Secure</div>
+        <div class="feature">📈 Profitable</div>
+        <div class="feature">⭐ Top Rated</div>
+    </div>
+
+    <div class="footer">
+        © 2026 domesticaddicts. All rights reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
